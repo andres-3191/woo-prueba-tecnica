@@ -111,6 +111,10 @@ function run_woo_prueba_tecnica() {
         $admin->init();
     }
 
+    // Load public-facing functionality
+    require_once WPT_PLUGIN_DIR . 'public/class-woo-prueba-tecnica-public.php';
+    $public = new WPT_Public( $options );
+    $public->init();
 }
 
 // Run the plugin
