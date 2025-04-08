@@ -16,6 +16,3 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 // Delete plugin options
 delete_option( 'wpt_options' );
 delete_site_option( 'wpt_options' );
-
-// Delete any transients, caches, etc.
-delete_transient( 'wpt_api_products' );
